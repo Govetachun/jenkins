@@ -49,7 +49,7 @@ services:
           cpus: "0.01"
           memory: 64M
       labels:
-        - "maintainer=bmd1905"
+        - "maintainer=govetachun"
     depends_on:
       - redis
     networks:
