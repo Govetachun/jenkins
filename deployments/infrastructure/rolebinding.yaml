@@ -1,15 +1,13 @@
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: pod-watch-binding
+  name: read-secrets
   namespace: model-serving
 subjects:
-- kind: User
-  name: "116885968878138943915"
-  apiGroup: rbac.authorization.k8s.io
+- kind: ServiceAccount
+  name: default
+  namespace: model-serving
 roleRef:
   kind: Role
-  name: pod-watch-role
+  name: secret-reader
   apiGroup: rbac.authorization.k8s.io
-
-# 116885968878138943915

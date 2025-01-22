@@ -2,8 +2,8 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   namespace: model-serving
-  name: pod-watch-role
+  name: secret-reader
 rules:
 - apiGroups: [""]
-  resources: ["pods"]
+  resources: ["secrets"]
   verbs: ["get", "list", "watch"]
