@@ -48,7 +48,7 @@ pipeline {
             }
         }
 
-        stage('Deploy to Google Kubernetes Engine C') {
+        stage('Deploy to Google Kubernetes Engine') {
             agent {
                 kubernetes {
                     yaml '''
