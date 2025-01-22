@@ -5,7 +5,7 @@ metadata:
   namespace: model-serving
 subjects:
 - kind: ServiceAccount
-  name: "116885968878138943915"
+  name: default
   namespace: model-serving
 roleRef:
   kind: Role
