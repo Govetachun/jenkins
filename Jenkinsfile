@@ -57,7 +57,7 @@ pipeline {
                         spec:
                           containers:
                           - name: helm
-                            image: govetachun/jenkins:lts-jdk17
+                            image: govetachun/jenkins
                             imagePullPolicy: Always
                             command:
                             - cat

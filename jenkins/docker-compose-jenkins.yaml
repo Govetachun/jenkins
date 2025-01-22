@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     platform: linux/amd64
-    image: govetachun/jenkins:lts-jdk17
+    image: govetachun/jenkins
     container_name: jenkins
     restart: unless-stopped
     privileged: true
